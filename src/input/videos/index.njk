@@ -1,0 +1,35 @@
+﻿---
+layout: layout
+permalink: /videos/index.html 
+title: "My Videos - Shawn Wildermuth's Rants and Raves"
+pageName: "My Videos"
+pageBlurb: "A collection of my instructional videos"
+---
+{% for cat in videos.categorized | sort(false, false, "order") %}
+  <h3>{{ cat.name }}</h3>
+  <div class="mt-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:gap-1 font-sans font-extralight">
+    {% for video in cat.items | sort(true, false, "datePublished") %}
+      <div class="p-1 hover:bg-gray-500/10">
+
+        {% if video.videoType === "YouTube" %}
+          {% set url = ["https://youtube.com/v/", video.videoCode] | join %}
+        {% elif video.videoType === "Vimeo" %}
+          {% set url = ["https://vimeo.com/", video.videoCode] | join%}
+        {% elif video.videoType === "Channel9" %}
+          {% set url = ["https://channel9.msdn.com/", video.videoCode] | join %}
+        {% endif %}
+
+        <div class="text-center">
+          <a class="hover:no-underline" href="{{ url }}">
+            <img class="w-full" src="{{ video.previewImageUrl }}" alt="{{ video.title }}"/>
+            <div class="leading-tight mt-1">{{ video.title }}</div>
+            {% if video.description %}
+              <div class="text-sm truncate">{{ video.description }}</div>
+            {% endif %}
+            <div  class="text-xs">{{ video.datePublished | formatDate }}</div>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}

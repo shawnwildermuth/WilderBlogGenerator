@@ -1,0 +1,15 @@
+﻿---
+layout: layout.njk
+pagination:
+  data: collections.tags  
+  size: 1
+  alias: tag
+permalink: tags/{{ tag | myslug }}/index.html
+pageName: Stories
+cover_image: "/img/headers/search.jpg"
+---
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 ">
+  {%- for story in collections.sortedPosts | byTag(tag)  -%}
+    {% include 'storyBox.njk' %}
+  {%- endfor -%}
+</div>

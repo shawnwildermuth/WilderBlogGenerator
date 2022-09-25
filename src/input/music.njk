@@ -1,0 +1,25 @@
+---
+layout: layout
+title: "Music - Shawn Wildermuth's Rants and Raves"
+pageName: "My Music "
+pageBlurb: "In case you didn't know...I play music too."
+cover_image: "/img/headers/about.jpg"
+---
+<h1>Songs</h1>
+
+<p>I used to be a street musician and later did some recording. These songs are probably over twenty years old now. Hope you enjoy them. (I play music under my first and middle names (Shawn Twain):</p>
+
+<div class="mx-8">
+  {% for album in music %}
+    <h2>{{ album.title }}</h3>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 font-sans">
+      {% for song in album.songs %}
+        <div class="border-2 rounded-lg border-amber-200/50 bg-amber-800 p-2">
+          <h3 class="mb-8">{{ song.name }}</h3>
+          <div class="essential_audio" data-url="{{ song.src }}"></div>
+          <a class="btn btn-info mt-8 w-full block" href="{{ song.src }}" target="_blank">download mp3</a>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>

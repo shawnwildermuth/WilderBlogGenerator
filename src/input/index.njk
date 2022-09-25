@@ -1,0 +1,29 @@
+﻿---
+title: Shawn Wildermuth's Blog - Home Page
+layout: layout
+permalink: index.html
+---
+{%- for story in collections.sortedPosts | take(11) -%}
+  {% if loop.first %}
+    {% include 'storyHighlight.njk' %}
+    <hr class="mt-2"/>
+    <div class="flex justify-between">
+      <h3>More Stories...</h3>
+      <div>
+        <a href="/search" class="text-amber-700 hover:text-amber-500 font-sans">Search</a> | <a href="/years" class="font-sans text-amber-700 hover:text-amber-500">View By Year</a>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-2 ">
+
+    {% else %}
+      {% include 'storyBox.njk' %}
+    {% endif %}
+  {%- endfor -%}
+</div>
+<hr class="mt-2"/>
+
+<div class="flex justify-end">
+  <div>
+    <a href="/search" class="font-sans text-amber-700 hover:text-amber-500">Search</a> | <a href="/years" class="font-sans text-amber-700 hover:text-amber-500">View By Year</a>
+  </div>
+</div>

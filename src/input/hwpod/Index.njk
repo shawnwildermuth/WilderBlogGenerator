@@ -1,0 +1,84 @@
+---
+title: "Hello World Podcast"
+_pageName: "Hello World Podcast"
+_pageBlurb: "Interviews with your favorite speakers about how they got started!"
+_cover_image: "/img/headers/podcast.jpg"
+layout: layout.njk
+permalink: /hwpod/index.html
+---
+ 
+<div class="w-full">
+<iframe title="Embed Player" 
+        src="https://play.libsyn.com/embed/destination/id/168980/height/6548/theme/modern/size/large/thumbnail/yes/custom-color/EEEEEE/playlist-height/6336/direction/backward/hide-subscribe/yes/download/yes" 
+        height="6548" 
+        width="100%" 
+        scrolling="no" 
+        allowfullscreen="" 
+        webkitallowfullscreen="true" 
+        mozallowfullscreen="true" 
+        oallowfullscreen="true" 
+        msallowfullscreen="true" 
+        style="border: none;"></iframe>
+</div>
+{# <div id="podcast">
+  <div>
+    <div role="menu" class="flex justify-end tags">
+      <span>
+        <a href="http://hwpod.libsyn.com/rss">
+          <i class="fas fa-rss"></i> Subscribe</a>
+      </span>
+      &nbsp;
+      <span>
+        <a href="https://itunes.apple.com/us/podcast/the-hello-world-podcast/id768018561">
+          <i class="fab fa-itunes"></i> iTunes</a>
+      </span>
+      &nbsp;
+      <span>
+        <a href="http://www.youtube.com/user/hwpod">
+          <i class="fab fa-youtube"></i> YouTube</a>
+      </span>
+    </div>
+  </div>
+  <div>
+    <a href="http://hwpod.com"><img class="float-right m-1" src="//wildermuth.com/img/hwpod/logo_125.jpg" alt="Hello World Podcast"/></a>
+    <p>
+    Not just another technical podcast. Shawn Wildermuth brings you his
+    "Hello World" podcast where we learn about how your favorite developers
+    tell their story of how they got started writing software!
+  </p>
+  </div>
+  <div class="clear-right"></div>
+  <hr/>
+  {% set currentEpisode = episodeList | published(1) | first %}
+  <div>
+    <div>
+      <div>
+        <div>
+          <small class="float-right">
+            <i class="fas fa-calendar"></i> Released: {{ first.publishedDate }}</small>
+        </div>
+        <div>
+          <h3>
+            <a href="/hwpod/{{ currentEpisode.guestName | myslug }}/{{ currentEpisode.episodeNumber }}">Episode {{ currentEpisode.episodeNumber }} - {{ currentEpisode.guestName }}</a>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include "hwpod/_episode.njk" -%}
+  <hr/>
+  <h3>Upcoming Guests</h3>
+  <div class="grid grid-cols-1 md:gap-1 md:grid-cols-3 xl:grid-cols-4">
+    {% for episode in episodeList | published(0) %}
+      {% set currentEpisode = episode %}
+      {% include "hwpod/_headshot.njk" -%}
+    {% endfor %}
+  </div>
+  <h3>Archive</h3>
+  <div class="grid grid-cols-1 md:gap-1 sm-grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+    {% for episode in episodeList | published(1) %}
+      {% set currentEpisode = episode %}
+      {% include "hwpod/_headshot.njk" -%}
+    {% endfor %}
+  </div>
+</div> #}

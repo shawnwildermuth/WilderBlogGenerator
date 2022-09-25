@@ -1,0 +1,366 @@
+[
+  {
+    "title": "Tailwind CSS: A Different Approach to Styling Websites",
+    "description": "NDNDC London 2022C",
+    "videoCode": "eNbzSg_44tU",
+    "videoType": "YouTube",
+    "datePublished": "2022-07-27"
+  },
+  {
+    "title": "Setting Up Azure Cosmos DB Emulator for Development",
+    "description": "From the Azure Cosmos DB Conf",
+    "videoCode": "CncakcC-Shc",
+    "videoType": "YouTube",
+    "datePublished": "2022-05-04"
+  },
+
+  {
+    "title": "Episode 437: Shawn Wildermuth on HelloWorld Road Trip",
+    "description": "David Giard and I talk about my Hello World Road Trip",
+    "videoCode": "lxbcxK9jNZI",
+    "videoType": "YouTube",
+    "datePublished": "2018-01-19"
+  },
+  
+  {
+    "id": 43,
+    "title": "Demo: Create a New Vue 3 Beta Project in 10 Minutes",
+    "description": "",
+    "videoType": "YouTube",
+    "videoCode": "DTfBucpEh4g",
+    "datePublished": "2020-07-14"
+  },
+  {
+    "id": 43,
+    "title": "Versioning Your API in ASP.NET Core",
+    "description": ".NET Sheffield UK",
+    "videoType": "YouTube",
+    "videoCode": "8TOA8WW7nk8",
+    "datePublished": "2020-06-02"
+  },
+  {
+    "id": 42,
+    "title": "Getting Started with Vue",
+    "description": "From Adelaide .NET User Group",
+    "videoType": "YouTube",
+    "videoCode": "Ffww90s6hrw",
+    "datePublished": "2020-06-09"
+  },
+  {
+    "id": 41,
+    "title": "Shawn Wildermuth - Interview re Vue to a Skill",
+    "description": "Encode Talent",
+    "videoType": "YouTube",
+    "videoCode": "WM40NZdYksU",
+    "datePublished": "2020-11-21"
+  },
+  {
+    "id": 40,
+    "title": "Real World Minimal APIs",
+    "description": "dotNetConf",
+    "videoType": "YouTube",
+    "videoCode": "UosTUODhSFw",
+    "datePublished": "2021-11-16"
+  },
+  {
+    "id": 39,
+    "title": "ASP.NET Core in Azure App Services' Docker",
+    "description": "AzureDevMuc",
+    "videoType": "YouTube",
+    "videoCode": "sK-tNm07FLg",
+    "datePublished": "2020-06-25"
+  },
+  {
+    "id": 38,
+    "title": "What is Vue.js?",
+    "description": "dotNET South West",
+    "videoType": "YouTube",
+    "videoCode": "a3p9VTgRqhA",
+    "datePublished": "2020-06-24"
+  },
+  {
+    "id": 37,
+    "title": "Ep. 27: Shawn Wildermuth",
+    "description": "Rockin' The Code World with dotNetDave",
+    "videoType": "YouTube",
+    "videoCode": "d7-Il5TYlpg",
+    "datePublished": "2021-06-12"
+  },
+  {
+    "id": 36,
+    "title": "CODE Presents: Minimal APIs Presented by Shawn Wildermuth",
+    "description": "Building REST APIs has become central to many development projects. The choice for building those projects is wide, but if you’re a C# developer, the options are more limited. Controller-based APIs have been the most common for a long time, but .NET 6 changes that with a new option. ",
+    "videoType": "YouTube",
+    "videoCode": "kF9GYYUPbEI",
+    "datePublished": "2021-12-08"
+  },
+  {
+    "id": 35,
+    "title": "How Should We Version our APIs?",
+    "description": "From 'The Hello World Show'",
+    "videoType": "YouTube",
+    "videoCode": "gFb1X_cB9vI",
+    "datePublished": "2017-11-21"
+  },
+  {
+    "id": 34,
+    "title": "Developing ASP.NET Core in VS Code",
+    "description": "From WROC# 2019",
+    "videoType": "YouTube",
+    "videoCode": "C9I-_6Owe1U",
+    "datePublished": "2020-01-09"
+  },
+
+  {
+    "id": 33,
+    "title": "Versioning APIs with ASP NET Core",
+    "description": "From .NET Conf 2019",
+    "videoType": "YouTube",
+    "videoCode": "ryPo5hYHSzM",
+    "datePublished": "2019-10-04"
+  },
+  {
+    "id": 31,  
+    "title": "Hire People Not Skills",
+    "description": "From Antacticonf",
+    "videoType": "YouTube",
+    "videoCode": "0LZcFmB2ako",
+    "datePublished": "2020-03-12"
+  },
+
+  {
+    "id": 30,
+    "title": "Coding in the Time of Covid-19",
+    "description": "In this short video, I talk with different people about how they are handling the lock-down orders.",
+    "videoType": "YouTube",
+    "videoCode": "9jN0WdJJkqE",
+    "datePublished": "2020-04-19"
+  },
+
+  {
+    "id": 27,
+    "title": "Creating Your Own Build/Test with GitHub Actions",
+    "description": "I created this video because I didn't see an easy walkthrough for Github Actions.",
+    "videoType": "YouTube",
+    "videoCode": "nNw5H31nuU0",
+    "datePublished": "2019-12-16"
+  },
+
+
+  {
+    "id": 26,
+    "title": "Getting Started with Vue.js",
+    "description": "A talk for the Mississauga .NET Users Group",
+    "videoType": "YouTube",
+    "videoCode": "qagslNUiuao",
+    "datePublished": "2020-05-28"
+  },
+
+  {
+    "id": 25,
+    "title": "NDC Sydney 2016 – Ask Me Anything! with Shawn Wildermuth (Anglular 2.0)",
+    "description": "I was interviewed down in Sydney about my thoughts on Angular 2",
+    "videoType": "YouTube",
+    "videoCode": "fO8cpO4pozc",
+    "datePublished": "2017-03-17"
+  },
+  {
+    "id": 24,
+    "title": "Tech and Friends - Episode 437: Shawn Wildermuth on the \"Hello World\" Road Trip",
+    "description": "I'm interviewed by David Giard about the Road Trip!",
+    "videoType": "Channel9",
+    "videoCode": "Blogs/Technology-and-Friends/tf437",
+    "datePublished": "2016-06-18"
+  },
+  {
+    "id": 23,
+    "title": "Creating the Smallest ASP.NET Core RC2 App",
+    "description": "This short tutorial shows you how to convert a new console app to a web server to see how the pieces fit together with the upcoming RC2.",
+    "videoType": "YouTube",
+    "videoCode": "-1Z44fdcvIg",
+    "datePublished": "2016-05-14"
+  },
+  {
+    "id": 22,
+    "title": "Visual Studio Tips: Refactoring and Building Classes",
+    "description": "In this video, I show you how to build classes and types with Visual Studio's built-in refactoring support.",
+    "videoType": "YouTube",
+    "videoCode": "EihHxxqSx80",
+    "datePublished": "2016-04-19"
+  },
+  {
+    "id": 1,
+    "title": "Docker and ASP.NET Core",
+    "description": "Some learnings from my fun with hosting ASP.NET Core in a Docker container, both on a local machine and in Azure.",
+    "videoType": "YouTube",
+    "videoCode": "PAmN-QUffbo",
+    "datePublished": "2016-04-08"
+  },
+  {
+    "id": 2,
+    "title": "Visual Studio Tips: Shortcut Keys",
+    "description": "I get asked a lot about what keys I tap during my courses, so I thought I'd put together some of my favorite trips with shortcut keys in Visual Studio.",
+    "videoType": "YouTube",
+    "videoCode": "p0frVzOQC-U",
+    "datePublished": "2016-04-02"
+  },
+  {
+    "id": 3,
+    "title": "Angular 2 and ASP.NET Core Projects",
+    "description": "Originally a webcast where I build an Angular 2 project in a ASP.NET Project live, it's not without some bumps and bruises but hopefully there are some things to learn here.",
+    "videoType": "YouTube",
+    "videoCode": "ufBbGMLgSj0",
+    "datePublished": "2016-04-02"
+  },
+  {
+    "id": 4,
+    "title": "Using Bower in ASP.NET Core and Visual Studio 2015",
+    "description": "A video where I show how to use Bower to do your ASP.NET 5 (ASP.NET Core) projects.",
+    "videoType": "YouTube",
+    "videoCode": "6N5EuxFFaOI",
+    "datePublished": "2015-11-10"
+  },
+  {
+    "id": 5,
+    "title": "Learn about ASP.NET 5 with expert Shawn Wildermuth",
+    "description": "In this Pluralsight webcast, I show you how to build an ASP.NET Core (e.g. ASP.NET 5) project from scratch!",
+    "videoType": "YouTube",
+    "videoCode": "EghnSvJ8h68",
+    "datePublished": "2015-11-20"
+  },
+
+  {
+    "id": 6,
+    "title": "Bootstrap 3 grid system explained",
+    "description": "In this preview of my Pluralsight Bootstrap 3 course, I show how the grid system works.",
+    "videoType": "YouTube",
+    "videoCode": "XFrbkhWP0rM",
+    "datePublished": "2013-12-04"
+  },
+
+  {
+    "id": 7,
+    "title": "Piggybacking on ASP.NET authentication with Web API",
+    "description": "In this preview of Preview of my Pluralsight ASP.NET Web API course, I show how to use cookie authentication to secure your REST APIs.",
+    "videoType": "YouTube",
+    "videoCode": "o-F5sYdoiYo",
+    "datePublished": "2013-10-15"
+  },
+
+  {
+    "id": 8,
+    "title": "Making scalable JavaScript",
+    "description": "In thie preview of my Pluralsight Course on Large Scale JavaScript, I talk about how scalability in JavaScript.",
+    "videoType": "YouTube",
+    "videoCode": "dfSBKZ1lI8c",
+    "datePublished": "2014-07-08"
+  },
+
+  {
+    "id": 9,
+    "title": "Building the Wireframe in Visual Studio with Zen Coding",
+    "description": "In this preview from my Pluralsight course on ASP.NET 4 (end-to-end), I show Zen Coding in Visual Studio.",
+    "videoType": "YouTube",
+    "videoCode": "HDm_PdoygRI",
+    "datePublished": "2013-08-27"
+  },
+
+  {
+    "id": 10,
+    "title": "Designing Web API URIs",
+    "description": "In this preview of my Pluralsight course on Designing APIs, I talk about starting a Web API by designing the URLs.",
+    "videoType": "YouTube",
+    "videoCode": "M9muQMMn__I",
+    "datePublished": "2013-07-10"
+  },
+
+  {
+    "id": 11,
+    "title": "How to build AngularJS directives using Webstorm 9",
+    "description": "In this preview of my Webstorm 9 course for Pluralsight, I show how to build directives directly in Webstorm.",
+    "videoType": "YouTube",
+    "videoCode": "LT8XSNu5TQ4",
+    "datePublished": "2014-12-12"
+  },
+
+  {
+    "id": 12,
+    "title": "Why Testing DOM-Centric JavaScript is Hard",
+    "description": "In this free clip from Large Scale JavaScript for Client and Server, I show you why testing your DOM-Centric JavaScript is difficult.",
+    "videoType": "YouTube",
+    "videoCode": "RE6ZQkzlLQ4",
+    "datePublished": "2014-02-05"
+  },
+  {
+    "id": 13,
+    "title": "Scoping in JavaScript Functions",
+    "description": "In this excerpt from my \"JavaScript for C# Developers\", I show you how scoping in JavaScript is different from C# so you don't make the same mistakes he did when he first was dabbling in the language.",
+    "videoType": "YouTube",
+    "videoCode": "LhL0gMJc2n8",
+    "datePublished": "2013-10-15"
+  },
+  {
+    "id": 14,
+    "title": "Namespace Simulation Using C# in JavaScript",
+    "description": "Too many globally scoped variables and functions can make Javascript code difficult to work with, particularly on large projects. In this video excerpt fromm course JavaScript for C# Developers you'll see how to simulate the concept of namespaces using objects. ",
+    "videoType": "YouTube",
+    "videoCode": "FikQPn-VbpM",
+    "datePublished": "2012-09-04"
+  },
+  {
+    "id": 15,
+    "title": "Refactoring CSS Rules to LESS",
+    "description": "In this demo from his A Better CSS: LESS and SASS course, I show you how to take nested CSS Rules and refactoring them using LESS into more maintainable code.",
+    "videoType": "YouTube",
+    "videoCode": "LYwFA2eoUJk",
+    "datePublished": "2013-09-10"
+  },
+  {
+    "id": 16,
+    "title": "CSS Debugging Tips",
+    "description": "Getting your web applications styled just right can sometimes require a bit of iteration. In this video excerpt from my course \"Debugging the Web\" you'll see how to edit the CSS rules in the browser where you can see the affects immediately and then how to move those changes back to your source stylesheet.",
+    "videoType": "YouTube",
+    "videoCode": "5RfDcy-ekGM",
+    "datePublished": "2012-06-06"
+  },
+  {
+    "id": 17,
+    "title": "What's new with WebStorm 9",
+    "description": "In this webinar, I will walk through the new features in WebStorm 9, a full web IDE from JetBrains.",
+    "videoType": "YouTube",
+    "videoCode": "v-2XivlbkQ0",
+    "datePublished": "2014-11-24"
+  },
+  {
+    "id": 18,
+    "title": "Modifying Styles with Firebug",
+    "description": "In this course excerpt from Debugging the Web, I show you how you can change styling information using Firebug and see the results in real-time.",
+    "videoType": "YouTube",
+    "videoCode": "HvsI4RmUxrE",
+    "datePublished": "2013-09-30"
+  },
+  {
+    "id": 19,
+    "title": "What is Bootstrap 4",
+    "description": "From NDC London 2016: After a couple of years in the planning, Bootstrap 4 is finally coming. If you’re already using Bootstrap or if you want a responsive framework to start building websites, this talk will introduce you to the newest version of this popular framework.",
+    "videoType": "Vimeo",
+    "videoCode": "158181618",
+    "datePublished": "2016-03-08"
+  },
+  {
+    "id": 20,
+    "title": "aspConf 2012: Modern Web Development",
+    "description": "In this talk, Shawn will walk the attendees through the new way that web applications are being built today using the latest in client-side development the best practices of how to carry that out with ASP.NET MVC.",
+    "videoType": "Channel9",
+    "videoCode": "events/aspConf/aspConf/Modern-Web-Development",
+    "datePublished": "2012-07-21"
+  },
+  {
+    "id": 21,
+    "title": "aspConf 2012: Responsive Design",
+    "description": "Instead of creating separate sites for the different sized mobile experiences, you should be creating sites that adapt to the screen they're shown on. In this talk, Shawn Wildermuth will show you the basics of making CSS work for you with responsive design techniques.",
+    "videoType": "Channel9",
+    "videoCode": "Events/aspConf/aspConf/Responsive-Design",
+    "datePublished": "2012-07-21"
+  }
+]

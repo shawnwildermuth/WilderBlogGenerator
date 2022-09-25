@@ -1,0 +1,30 @@
+﻿---
+title: Upcoming Events - Shawn Wildermuth
+pageName: Upcoming Events
+layout: layout
+---
+<div class="grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+  {%- for ap in calendar | sort(false, false, "eventDate") | future("eventDate")  -%}
+    <div class="border-2 p-1 my-2">
+      <div class="text-center flex flex-col">
+        {%- if ap.logo -%}
+          <div class="mx-auto border rounded p-1 border-slate-300">
+            <a href="{{ ap.link }}"><img src="{{ ap.logo }}" class="{{ "reversed" if (ap.reverseLogo)  }} h-12 md:h-16 lg:h-24 p-2" alt="{{ ap.eventName }}"/></a>
+          </div>
+        {%- endif -%}
+        <div>
+          <h2>
+            <a href="{{ ap.link }}" target="_blank">{{ ap.eventName }}</a>
+          </h2>
+          <div>{{ ap.location }} - {{ ap.eventDate }}</div>
+          {%- if ap.note -%}
+            <div class="text-muted small">{{ ap.note }}</div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  {%- endfor -%}
+  {%- if calendar | noneAfterDate("eventDate") -%}
+    <div>No upcoming events...</div>
+  {%- endif %}
+</div>

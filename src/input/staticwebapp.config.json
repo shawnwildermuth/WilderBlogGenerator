@@ -1,0 +1,21 @@
+{
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404",
+      "statusCode": 200
+    },
+    "403": {
+      "rewrite": "/error",
+      "statusCode": 200
+    },
+    "401": {
+      "rewrite": "/error",
+      "statusCode": 200
+    },
+    "400": {
+      "rewrite": "/error",
+      "statusCode": 200
+    }
+
+  }
+}

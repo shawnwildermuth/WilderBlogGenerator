@@ -1,0 +1,19 @@
+<div class="flex justify-end">
+  <div class="mr-2 mt-1">
+    Year:
+  </div>
+  <select class="year-selector rounded focus:ring ring-orange-400 w-32 p-1 m-1 font-sans text-slate-800 outline-none focus:" >
+    {% for year in collections.years %}
+      {% if year == currentYear %}
+        {% set activeClass = "active" %}
+      {% else %}
+        {% set activeClass = "" %}
+      {% endif %}
+      <option value="{{year}}"
+        {% if year == currentYear %}
+          selected 
+        {% endif %}
+        >{{year}}</option>
+    {% endfor %}
+  </select>
+</div>

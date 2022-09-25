@@ -1,0 +1,25 @@
+<div>
+  {% if currentEpisode.status === 0 %}
+    <div class="w-full text-center">
+      <div><img src="{{ currentEpisode.guestHeadshot }}" class="headshot" alt="{{ currentEpisode.guestName }}" /></div>
+      <div>
+        <div>{{ currentEpisode.guestName }}</div>
+        <div>
+          <small>{{ currentEpisode.publishedDate }}</small>
+        </div>
+      </div>
+    </div>
+  {% else %}
+    <a href="/hwpod/{{ currentEpisode.guestName | myslug }}/{{ currentEpisode.episodeNumber }}">
+      <div class="w-full text-center">
+        <div><img src="{{ currentEpisode.guestHeadshot }}" class="headshot" alt="{{ currentEpisode.guestName }}" /></div>
+        <div>
+          <div>{{ currentEpisode.guestName }}</div>
+          <div>
+            <small>{{ currentEpisode.publishedDate }}</small>
+          </div>
+        </div>
+      </div>
+    </a>
+  {% endif %}
+</div>

@@ -1,0 +1,56 @@
+---json
+{
+  "permalink": "feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "Shawn Wildermuth's Blog",
+    "subtitle": "My Favorite Rants and Raves",
+    "url": "https://wildermuth.com/",
+    "feedUrl": "https://wildermuth.com/feed.xml",
+    "author": {
+      "name": "Shawn Wildermuth",
+      "email": "shawn@wildermuth.com"
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <rights>Copyright (c) Shawn Wildermuth {{ page.date | format("yyyy") }}</rights>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.sortedPosts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in collections.sortedPosts | take(25) %}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <itunes:image>{{ post.data.cover_image}}</itunes:image>
+    <content type="html">
+      {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+      &lt;div&gt;
+        &lt;div style=&quot;float: left;&quot;&gt;
+          &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/3.0/&quot;&gt;
+            &lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width: 0&quot; src=&quot;http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;
+          This work by &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://wildermuth.com&quot;
+            property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Shawn Wildermuth&lt;/a&gt; is
+          licensed under a &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/3.0/&quot;&gt;
+            Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License&lt;/a&gt;.&lt;br /&gt;
+          Based on a work at &lt;a xmlns:dct=&quot;http://purl.org/dc/terms/&quot; href=&quot;http://wildermuth.com&quot;
+            rel=&quot;dct:source&quot;&gt;wildermuth.com&lt;/a&gt;.&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr/&gt;&lt;div&gt;If you liked this article, see Shawn&#39;s courses on &lt;a href=&quot;http://shawnw.me/pscourses&quot;&gt;Pluralsight&lt;/a&gt;.&lt;/div&gt;
+    </content>
+  </entry>
+  {%- endfor %}
+</feed>

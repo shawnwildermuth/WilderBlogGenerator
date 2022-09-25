@@ -1,0 +1,22 @@
+<div class="py-1 cursor-pointer">
+  <a href="{{ story.url }}" class="hover:no-underline">
+    {%- if story.data.thumb_image -%}
+      {% set url = story.data.thumb_image %}
+    {%- elif story.data.cover_image -%}
+      {% set url = story.data.cover_image %}
+    {%- else %}
+      {% set url = site.defaultStoryImg %}
+    {%- endif %}
+    <div class="bg-gray-500 rounded-xl">
+      <div class="bg-cover rounded-xl aspect-video mx-auto" style="background-image: url({{ url }})">
+        <div class="h-full rounded-xl w-full bg-gray-900/75 p-1 relative hover:bg-transparent text-white text-shadow hover:text-transparent">
+          <div class="absolute bottom-1 left-1 p-1">
+            <div class="text-2xl font-sans" >{{ story.data.title }}</div>
+            <div class="text-sm" >
+              {{ story.data.date | formatDate }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

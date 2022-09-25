@@ -1,0 +1,16 @@
+---
+permalink: /search/index.json
+eleventyExcludeFromCollections: true
+---
+[
+  {% for story in collections.post %} 
+    {
+      "title": "{{ story.data.title | trim | replace("\n", "") }}",
+      "date": "{{ story.date }}",
+      "permalink": "{{ story.data.permalink }}",
+      "categories": [ {% for cat in story.data.categories %}"{{ cat  }}"{%- if not loop.last -%},{%- endif -%} {% endfor %} ],
+      "url": "{{ story.url }}",
+      "content": "{{ story.templateContent | striptags | replace("\\", "/") }}"
+    }{%- if not loop.last -%},{%- endif -%}
+  {% endfor %}
+]

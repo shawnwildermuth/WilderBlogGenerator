@@ -1,0 +1,161 @@
+[
+  {
+    "id": "tailwind-css-3-fundamentals",
+    "name": "TailwindCSS 3 Fundamentals",
+    "hint": "(new)"
+  },
+  {
+    "id": "aspdotnet-core-6-using-grpc",
+    "name": "Using gRPC in ASP.NET Core 6",
+    "hint": "(new)"
+  },
+  {
+    "id": "html5-javascript-css-front-end-web-app",
+    "name": "Front-End Web Development Quick Start With HTML5, CSS, and JavaScript",
+    "hint": ""
+  },
+  {
+    "id": "aspdotnet-core-bestpractices-models",
+    "name": "Best Practices in ASP.NET Core: Entities, Validation, and View Models",
+    "hint": ""
+  },
+  {
+    "id": "aspnetcore-mvc-efcore-bootstrap-angular-web",
+    "name": "Building a Web App with ASP.NET Core, MVC, Entity Framework Core, Bootstrap, and Angular",
+    "hint": ""
+  },
+  {
+    "id": "vue-building-forms",
+    "name": "Building Forms with Vue",
+    "hint": ""
+  },
+  {
+    "id": "building-api-aspdotnet-core",
+    "name": "Building an API with ASP.NET Core",
+    "hint": "(new)"
+  },
+
+  {
+    "id": "designing-restful-web-apis",
+    "name": "Designing RESTful Web APIs",
+    "hint": "(new)"
+  },
+  {
+    "id": "aspnet-web-api-building",
+    "name": "Building an API with ASP.NET Web API",
+    "hint": ""
+  },
+  {
+    "id": "building-api-aspdotnet-core",
+    "name": "Building an API with ASP.NET Core",
+    "hint": ""
+  },
+  {
+    "id": "aspnetcore-mvc-efcore-bootstrap-angular-web",
+    "name": "Building a Web App with ASP.NET Core, MVC6, EF Core, Bootstrap and Angular",
+    "hint": ""
+  },
+  {
+    "id": "less-getting-started",
+    "name": "Less: Getting Started",
+    "hint": ""
+  },
+  {
+    "id": "vue-js-by-example",
+    "name": "Vue.js by Example",
+    "hint": "",
+    "courseType": "WilderMinds"
+  },
+  {
+    "id": "bootstrap-4-by-example",
+    "name": "Bootstrap 4 by Example",
+    "hint": "",
+    "courseType": "WilderMinds"
+  },
+  {
+    "id": "font-awesome-5",
+    "name": "Intro to Font Awesome 5",
+    "hint": "(Free Course)",
+    "courseType": "WilderMinds"
+  },
+  {
+    "id": "visual-studio-code-aspdotnet-projects",
+    "name": "Using Visual Studio Code for ASP.NET Core Projects",
+    "hint": ""
+  },
+  {
+    "id": "implementing-restful-aspdotnet-web-api",
+    "name": "Implementing ASP.NET Web API",
+    "hint": ""
+  },
+  {
+    "id": "web-api-design",
+    "name": "Web API Design",
+    "hint": ""
+  },
+  {
+    "id": "js4cs",
+    "name": "JavaScript for C# Developers",
+    "hint": ""
+  },
+  {
+    "id": "webstorm-fundamentals",
+    "name": "Webstorm Fundamentals",
+    "hint": ""
+  },
+  {
+    "id": "aspdotnetcore-implementing-securing-api",
+    "name": "Implementing and Securing an API with ASP.NET Core",
+    "hint": ""
+  },
+  {
+    "id": "aspdotnet-bestpractices-models",
+    "name": "Best Practices in ASP.NET: Entities, Validation, and View Models",
+    "hint": ""
+  },
+  {
+    "id": "front-end-web-app-html5-javascript-css",
+    "name": "Front-End Web Development Quick Start",
+    "hint": ""
+  },
+  {
+    "id": "dotnet-code-reviews-real-world-lessons",
+    "name": "Lessons from Real World .NET Code Reviews",
+    "hint": ""
+  },
+  {
+    "id": "nodejs-dotnet-developers",
+    "name": "Node.js for .NET Developers",
+    "hint": ""
+  },
+  {
+    "id": "large-scale-javascript",
+    "name": "Large Scale JavaScript",
+    "hint": ""
+  },
+  {
+    "id": "bootstrap-3",
+    "name": "Bootstrap 3",
+    "hint": ""
+  },
+  {
+    "id": "site-building-bootstrap-angularjs-ef-azure",
+    "name": "Building a Site with Bootstrap, AngularJS, ASP.NET, et al.",
+    "hint": ""
+  },
+  {
+    "id": "practical-phoneGap",
+    "name": "Practical PhoneGap",
+    "hint": ""
+  },
+  {
+    "id": "web-debug",
+    "name": "Debugging the Web with Firebug and Fiddler",
+    "hint": ""
+  },
+  {
+    "id": "better-css",
+    "name": "Better CSS: LESS and SASS",
+    "hint": ""
+  }
+]

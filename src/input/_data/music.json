@@ -1,0 +1,24 @@
+[{
+  "title": "Bridges and Ghosts (1997)",
+  "songs": [{
+      "name": "Dirty Little Secret",
+      "src": "/music/01-Dirty Little Secret.mp3"
+    },
+    {
+      "name": "Anne",
+      "src": "/music/02-Anne.mp3"
+    },
+    {
+      "name": "Bridges and Ghosts",
+      "src": "/music/03-Bridges and Ghosts.mp3"
+    },
+    {
+      "name": "In the Night",
+      "src": "/music/04-In the Night.mp3"
+    },
+    {
+      "name": "I am not well...",
+      "src": "/music/05-I am not well....mp3"
+    }
+  ]
+}]

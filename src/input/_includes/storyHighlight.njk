@@ -1,0 +1,18 @@
+<div class="p-1">
+  <a href="{{ story.url }}">
+    {%- if story.data.cover_image -%}
+      {% set url = story.data.cover_image %}
+    {%- else %}
+     {% set url = site.defaultStoryImg %}
+    {%- endif %}
+    <div class="mx-auto w-full h-96 lg:w-[32rem] lg:h-60 xl:w-[48rem] xl:h-96  bg-cover border border-transparent hover:border-amber-700 bg-no-repeat rounded-xl bg-center" style="background-image: url('{{ url }}')"></div>
+  </a>
+  <h1 class="text-center text-xl md:text-2xl lg:text-3xl hover:text-amber-300"><a href="{{ story.url }}">{{ story.data.title }}</a></h1>
+  <div class="ml-8 text-lg text-center">
+      <i class="fas fa-calendar"></i>&nbsp;{{ story.data.date | formatDate }}
+  </div>
+  <div class="my-4 text-xl">
+    {{ story.data.description | safe }} 
+  </div>
+  <div class="text-center"><a href="{{ story.url }}" class="btn btn-info">Read More...</a></div>
+</div>

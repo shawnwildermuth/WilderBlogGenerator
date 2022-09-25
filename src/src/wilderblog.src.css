@@ -1,0 +1,216 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro&family=Source+Serif+4:opsz,wght@8..60,300;8..60,600&display=swap');
+
+.ignore {
+  width: auto;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+  html {
+    @apply font-serif;
+  }
+
+  h1 {
+    @apply font-sans text-4xl font-bold mt-2 mb-4;
+  }
+
+  h2 {
+    @apply font-sans text-2xl font-bold mt-1 mb-4;
+  }
+
+  h3 {
+    @apply font-sans text-xl font-bold mt-1 mb-3;
+  }
+
+  h4 {
+    @apply font-sans text-xl mt-1 mb-3;
+  }
+
+  p {
+    @apply mb-4;
+  }
+
+  pre {
+    @apply max-w-full;
+  }
+  footer {
+    @apply pb-2 bg-gray-800 text-zinc-200;
+  }
+
+  footer a {
+    @apply text-yellow-400;
+  }
+
+  footer .follow {
+    @apply flex flex-wrap space-x-4 justify-center text-zinc-200 text-xl md:text-2xl;
+  }
+
+  footer .follow a {
+    @apply text-white;
+  }
+
+  footer .follow a:hover {
+    @apply no-underline;
+  }
+
+  footer a:hover {
+    @apply underline;
+  }
+
+  /* Submenu */
+
+  #social-icons a {
+    @apply text-white h-6 p-1 w-[.5rem] hover:text-white;
+  }
+
+  #social-icons li {
+    @apply  hover:animate-pulse;
+  }
+
+  #menu li:not(.submenu) {
+    @apply hover:text-yellow-600 m-0 px-2 py-1 hover:bg-gray-800;
+  }
+
+  #menu li.submenu {
+    @apply hover:text-yellow-600 m-0 px-2 py-1;
+  }
+
+  #menu a {
+    @apply text-yellow-500;
+  }
+
+  #menu a:hover {
+    @apply text-yellow-600 no-underline;
+  }
+
+  #menu .submenu > div {
+    @apply cursor-pointer text-yellow-500 hover:text-yellow-600;
+  }
+
+  #menu .submenu ul {
+    @apply ml-1 hidden;
+  }
+  
+  .btn {
+    @apply bg-gray-700 hover:bg-gray-300 rounded-md text-white hover:text-gray-600 no-underline hover:no-underline p-2 m-1 text-center font-sans;
+  }
+
+  .btn:disabled {
+    @apply bg-gray-100 hover:bg-gray-100 text-gray-200 hover:text-gray-200;
+  }
+
+  .btn.btn-info {
+    @apply bg-yellow-600 hover:bg-yellow-200;
+  }
+
+  .btn.btn-success {
+    @apply bg-green-600 hover:bg-green-100;
+  }
+
+  .btn.btn-warning {
+    @apply bg-red-600 hover:bg-red-200;
+  }
+
+
+}
+
+@layer utilities {
+  .embed-responsive {
+    @apply relative overflow-hidden w-full;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+
+  @screen 2xl {
+    .blog-story .embed-responsive {
+      @apply w-2/3 mx-auto;
+      padding-top: 37.5%;
+      /* 9 by 6 for 2/3 of screen */
+    }
+  }
+
+  .embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Outside of layer means it'll be output no matter what */
+
+pre, code {
+  @apply !font-mono;
+}
+
+pre {
+  @apply !mt-6 !mb-10;
+}
+
+.token.operator {
+  @apply bg-transparent !text-blue-300;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* FORMS */
+form label {
+  @apply text-slate-200 text-base;
+}
+
+form input[type=text], 
+form input[type=email], 
+form input[type=phone], 
+form input[type=password], 
+form select,
+form textarea {
+  @apply w-full block outline-none 
+         focus:ring focus:ring-amber-700 focus:bg-amber-100 
+         rounded my-2 p-2
+         text-black
+         bg-gray-200
+         placeholder:text-slate-400 placeholder:italic;
+} 
+
+#content-block #story-block ul {
+  @apply ml-2 list-disc list-inside my-2;
+}
+
+#content-block #story-block a {
+  @apply text-amber-500 hover:text-amber-700 font-bold;
+}
+
+#content-block #story-block blockquote {
+  @apply border-l-amber-700 border-l-8 pl-2 my-4;
+}
+
+#content-block #story-block blockquote p {
+  @apply mb-0;
+}
+
+#content-block #story-block img {
+  @apply shadow-md shadow-gray-500;
+}
+
+#content-block #story-block h1, 
+#content-block #story-block h2, 
+#content-block #story-block h3, 
+#content-block #story-block h4 {
+  @apply border-b-2 border-b-amber-700 mb-2;
+} 

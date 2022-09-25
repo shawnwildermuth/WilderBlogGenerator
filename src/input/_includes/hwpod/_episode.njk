@@ -1,0 +1,34 @@
+<div class="flex justify-between">
+  <div class="w-full">
+    {% for bio in currentEpisode.guestBio %}
+      <p>{{ bio | safe }}</p>
+    {% endfor %}
+    {% for link in currentEpisode.guestLinks %}
+      <blockquote><p><a href="{{ link.link }}">{{ link.name }}</a></p></blockquote>
+    {% endfor %}
+
+    <div>
+      <p>Listen now:</p>
+      <audio src="{{ currentEpisode.audioLink }}" preload="auto" controls></audio>
+      <a href="{{ currentEpisode.audioLink }}">Download MP3</a><br />
+      <a href="/hwpod/{{ currentEpisode.guestName | myslug }}/{{ currentEpisode.episodeNumber }}" target="_blank">Open this episode in a separate window/tab</a>
+      {% if currentEpisode.youTubeLink %}
+        <br /><a href="{{ currentEpisode.youTubeLink }}">Open this episode in YouTube</a>
+      {% endif %}
+    </div>
+  </div>
+  <div class="text-center p-2">
+    <div>
+      <img src="{{ currentEpisode.guestHeadshot }}" alt="{{ currentEpisode.guestName }}" class="headshot" />
+    </div>
+    <div>
+      <small>{{ currentEpisode.guestName }}</small>
+    </div>
+    <div>
+      <a href="{{ currentEpisode.guestFirstMachineLink }}" target="_blank"><img src="{{ currentEpisode.guestFirstMachineImage }}" alt="{{ currentEpisode.guestFirstMachineName }}" class="headshot" /></a>
+    </div>
+    <div>
+      <small>First Computer: <br /><a href="{{ currentEpisode.guestFirstMachineLink }}" target="_blank">{{ currentEpisode.guestFirstMachineName }}</a></small>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+  <!--<![endif]-->
+  {% include "_head.njk" %}
+  <body class="bg-slate-900 text-amber-50">
+
+    <div class="w-full">
+      {% include "_topbar.njk" %}
+      <div class="flex flex-col md:flex-row">
+        {% include "_sidebar.njk" %}
+        <section id="content-block" class="text-xl h-fit text-amber-50 block mb-6 pt-10 px-2 pb-2  mx-6 my-2  flex-grow tracking-[.01em]">
+          {%- if pageName  -%}
+            <div>
+              <h2>{{ pageName }}</h2>
+              {%- if pageBlurb -%}
+                <div class="text-amber-100 text-lg -mt-4">{{ pageBlurb }}</div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+          {%- if pageName  -%}
+            <hr class="border border-amber-500 mb-6"/>
+          {%- endif -%}
+          <div class="w-full lg:w-4/5 lg:mx-auto">
+            {{ content | safe }}
+          </div>
+        </section>
+      </div>
+      {% include "_footer.njk" %}
+    </div>
+
+  </body>
+  {% include "_scripts.njk" %}
+</html>

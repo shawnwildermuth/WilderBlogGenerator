@@ -1,0 +1,11 @@
+<div class="w-100">
+  <div class="embed-responsive embed-responsive-16x9">
+    {% if video.videoType === "YouTube" %}
+      <iframe data-src="https://www.youtube.com/embed/{{ video.videoCode}}?rel=0" frameborder="0" allowfullscreen></iframe>
+    {% elif video.videoType === "Vimeo" %}
+      <iframe data-src="https://player.vimeo.com/video/{{ video.videoCode}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    {% elif video.videoType === "Channel9" %}
+      <iframe data-src="https://channel9.msdn.com/{{ video.videoCode}}/player" allowFullScreen frameBorder="0"></iframe>
+    {% endif %}
+  </div>
+</div>

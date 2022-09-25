@@ -1,0 +1,148 @@
+---
+layout: layout.njk
+eleventyComputed:
+  pageName: ""
+  ignoreFeatureImage: true
+---
+{%- if cover_image -%}
+  {% set url = cover_image %}
+{%- elif thumb_image -%}
+  {% set url = thumb_image %}
+{%- else -%}
+  {% set url = site.defaultStoryImg %}
+{%- endif -%}
+
+<div class="mt-8 md:mt-4">
+  <div class="hidden lg:block mb-4">
+    <div class="rounded-lg 
+      mx-auto 
+      bg-left 
+      bg-cover 
+      bg-no-repeat 
+      lg:w-[36rem]
+      lg:h-72 
+      xl:w-[48rem]
+      xl:bg-contain 
+      xl:h-72
+      2xl:w-[52rem]" 
+      style="background-image: url({{url}})">
+      <div class="xl:ml-[32rem] lg:ml-[20rem] p-2 text-lg rounded-r-lg font-sans bg-black/90 h-full">
+        <h3>{{ title }}</h1>
+        <div class="flex p-1">
+          <div class="mr-1">
+            <i class="fas fa-pencil-alt fa-fw"></i>
+          </div>
+          <a href="/contact">Shawn Wildermuth</a>
+        </div>
+        <div class="flex p-1">
+          <div class="mr-1">
+            <i class="fas fa-calendar  fa-fw"></i>
+          </div>
+          <div>{{ date | formatDate }}</div>
+        </div>
+        <div class="flex p-1">
+          <div class="mr-1">
+            <i class="fas fa-tags  fa-fw"></i>
+          </div>
+          <div>
+            {%- for tag in categories -%}
+              <span>
+                <a href="/tags/{{ tag | myslug }}/"  class="text-amber-500 hover:text-amber-700">{{ tag }}</a>
+              </span>
+            {%- endfor -%}
+          </div>
+        </div>
+        <div class="flex p-1">
+          <div class="mr-1">
+            <i class="fas fa-comments  fa-fw"></i>
+          </div>
+          <span class="disqus-comment-count" data-disqus-identifier="{{ uniqueId }}">No Comments.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex text-lg justify-center flex-col mb-6 font-sans lg:hidden">
+    <div class="max-w-xl mx-auto">
+      <img src="{{ url }}" alt="Cover" class="border border-gray-700 rounded shadow-lg hover:shadow-2xl hover:border-2"/>
+    </div>
+    <h1 class="text-center">{{ title }}</h1>
+    <div class="details">
+      <div class="flex p-1">
+        <div class="mr-2">
+          <i class="fas fa-fw fa-pencil-alt w-8"></i>
+        </div>
+        <a href="/contact">Shawn Wildermuth</a>
+      </div>
+      <div class="flex p-1">
+        <div class="mr-2">
+          <i class="fas fa-fw fa-calendar"></i>
+        </div>
+        <div>{{ date | formatDate }}</div>
+      </div>
+      <div class="flex p-1">
+        <div class="mr-2">
+          <i class="fas fa-fw fa-tags"></i>
+        </div>
+        <div>
+          {%- for tag in categories -%}
+            <span>
+              <a href="/tags/{{ tag | myslug }}/" class="text-amber-500 hover:text-amber-700">{{ tag }}</a>
+            </span>
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="flex p-1">
+        <div class="mr-2">
+          <i class="fas fa-fw fa-comments"></i>
+        </div>
+        <span class="disqus-comment-count" data-disqus-identifier="{{ uniqueId }}">No Comments.</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div id="story-block" class="lg:mx-auto blog-story grid">
+  {{ content | safe }}
+</div>
+<hr class="mt-2 mb-4 border-amber-800"/>
+<div class="align-text-top 
+      mx-auto
+      lg:w-[36rem]
+      xl:w-[48rem]
+      2xl:w-[52rem]">
+  <div class="p-1 w-full align-top mr-2 mb-8">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/" class="float-right m-1">
+      <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"/>
+    </a>
+    <div class="text-lg md:text-sm">
+          This work by <a xmlns:cc="http://creativecommons.org/ns#" href="//wildermuth.com"
+                          property="cc:attributionName" rel="cc:attributionURL">Shawn Wildermuth</a> is
+          licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+            Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+          </a>. Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="//wildermuth.com"
+                                      rel="dct:source">wildermuth.com</a>.
+      </div>
+
+  </div>
+  <div id="disqus_thread" class="w-100 p-1 border border-zinc-500"></div>
+
+</div>
+
+<script>
+var disqus_config = function () {
+  this.page.url = `https://wildermuth.com/{{ page.url }}`;
+  this.page.identifier = "{{ uniqueId}}";
+};
+
+(function () { // DON'T EDIT BELOW THIS LINE
+  var d = document,
+    s = d.createElement('script');
+
+  s.src = '//wildermuth.disqus.com/embed.js';
+
+  s.setAttribute('data-timestamp', + new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>

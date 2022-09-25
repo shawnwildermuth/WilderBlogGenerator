@@ -1,0 +1,29 @@
+---
+permalink: /videos/index.json
+eleventyExcludeFromCollections: true
+---
+[
+{% for cat in videos.categorized | sort(false, false, "order") %}
+  {% for video in cat.items | sort(true, false, "datePublished") %}
+    {% if video.videoType === "YouTube" %}
+      {% set url = ["https://youtube.com/v/", video.videoCode] | join %}
+    {% elif video.videoType === "Vimeo" %}
+      {% set url = ["https://vimeo.com/", video.videoCode] | join%}
+    {% elif video.videoType === "Channel9" %}
+      {% set url = ["https://channel9.msdn.com/", video.videoCode] | join %}
+    {% endif %}
+    {
+      "title": "{{ video.title | trim | replace("\n", "") }}",
+      "date": "{{ video.datePublished }}",
+      "permalink": "",
+      "categories": [ "{{ video.videoType }}", "Video"],
+      "url": "{{ url }}",
+      {% if video.description %}
+      "content": "{{ video.description | striptags | replace("\\", "/") }}"
+      {% else %}
+      "content": "{{ video.title | trim | replace("\n", "") }}"
+      {% endif %}
+    }{%- if not loop.last -%},{%- endif -%}
+  {% endfor %}{%- if not loop.last -%},{%- endif -%}
+{% endfor %}
+]
