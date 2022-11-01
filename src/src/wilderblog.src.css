@@ -12,7 +12,7 @@
 @layer components {
 
   html {
-    @apply font-serif;
+    @apply font-serif;  
   }
 
   h1 {
