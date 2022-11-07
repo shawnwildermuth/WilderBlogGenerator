@@ -55,6 +55,7 @@ module.exports = function (cfg) {
   }
 
   cfg.addPassthroughCopy('input/staticwebapp.config.json');
+  cfg.addPassthroughCopy('input/.wellknown');
 
   // Collections
   createCollections(cfg);
