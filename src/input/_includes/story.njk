@@ -27,7 +27,6 @@ eleventyComputed:
       2xl:w-[52rem]" 
       style="background-image: url({{url}})">
       <div class="xl:ml-[32rem] lg:ml-[20rem] p-2 text-lg rounded-r-lg font-sans bg-black/90 h-full">
-        <h3>{{ title }}</h1>
         <div class="flex p-1">
           <div class="mr-1">
             <i class="fas fa-pencil-alt fa-fw"></i>
@@ -60,12 +59,13 @@ eleventyComputed:
         </div>
       </div>
     </div>
+    <h1 class="mt-8 border-b border-gray-500 pb-4 lg:text-3xl 2xl:text-5xl text-center">{{ title }}</h1>
   </div>
   <div class="flex text-lg justify-center flex-col mb-6 font-sans lg:hidden">
     <div class="max-w-xl mx-auto">
       <img src="{{ url }}" alt="Cover" class="border border-gray-700 rounded shadow-lg hover:shadow-2xl hover:border-2"/>
     </div>
-    <h1 class="text-center">{{ title }}</h1>
+    <h1 class="mt-8 border-b border-gray-500 pb-4 text-2xl sm:text-3xl md:text-4xl text-center">{{ title }}</h1>
     <div class="details">
       <div class="flex p-1">
         <div class="mr-2">
