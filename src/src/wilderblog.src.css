@@ -36,7 +36,7 @@
   }
 
   pre {
-    @apply max-w-full;
+    @apply max-w-full overflow-auto;
   }
   footer {
     @apply pb-2 bg-gray-800 text-zinc-200;
