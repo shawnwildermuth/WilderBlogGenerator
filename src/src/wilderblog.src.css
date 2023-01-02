@@ -189,7 +189,7 @@ form textarea {
 } 
 
 #content-block #story-block ul {
-  @apply ml-2 list-disc list-inside my-2;
+  @apply ml-2 list-disc list-inside mt-4 mb-8 text-orange-300;
 }
 
 #content-block #story-block a {

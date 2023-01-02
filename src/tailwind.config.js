@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    "./input/**/*.{html,njk}", 
+    "./input/**/*.{html,njk,md}", 
     "./client/**/*.vue",
     "./src/**/*.js"
   ],

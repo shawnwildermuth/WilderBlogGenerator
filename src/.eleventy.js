@@ -10,18 +10,18 @@ const transforms = require("./utils/transforms");
 
 require("dotenv").config();
 
-module.exports = function (cfg) {
+module.exports = function (cfg) { 
 
   if (process.env.NODE_ENV !== "production") {
     const ignores = [
-      // "input/hwpod/",
-      // "input/music/",
-      // "input/search/",
-      // "input/videos/",
-      // "input/tags.njk",
-      //"input/*.njk",
-      // "input/stories/200*/**/",
-      // "input/stories/201*/**/",
+      "input/hwpod/",
+      "input/music/",
+      "input/search/",
+      "input/videos/",
+      "input/tags.njk",
+      "input/*.njk",
+      "input/stories/200*/**/",
+      "input/stories/201*/**/",
       //"input/stories/202*/",
     ];
     for (let ignore of ignores) {
