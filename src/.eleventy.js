@@ -19,7 +19,7 @@ module.exports = function (cfg) {
       "input/search/",
       "input/videos/",
       "input/tags.njk",
-      "input/*.njk",
+      //"input/*.njk",
       "input/stories/200*/**/",
       "input/stories/201*/**/",
       //"input/stories/202*/",

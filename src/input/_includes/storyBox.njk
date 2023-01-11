@@ -5,16 +5,18 @@
     {%- elif story.data.cover_image -%}
       {% set url = story.data.cover_image %}
     {%- else %}
-      {% set url = site.defaultStoryImg %}
+      {% set url = site.defaultStoryImg %} 
     {%- endif %}
     <div class="bg-gray-500 rounded-xl">
       <div class="bg-cover rounded-xl aspect-video mx-auto" style="background-image: url({{ url }})">
-        <div class="h-full rounded-xl w-full bg-gray-900/75 p-1 relative hover:bg-transparent text-white text-shadow hover:text-transparent">
-          <div class="absolute bottom-1 left-1 p-1">
-            <div class="text-2xl font-sans" >{{ story.data.title }}</div>
-            <div class="text-sm" >
-              {{ story.data.date | formatDate }}</div>
+        <div class="h-full rounded-lg w-full bg-gray-900/90 p-1 relative hover:bg-transparent text-white hover:text-white/10">
+          <div class="flex justify-center items-stretch px-5 py-10 xl:py-5">
+            <div class="text-3xl md:text-2xl font-sans" >{{ story.data.title }}</div>
           </div>
+          <div class="absolute left-5 bottom-2">
+            <div class="text-sm text-center" >
+              {{ story.data.date | formatDate }}</div>
+              </div>
         </div>
       </div>
     </div>

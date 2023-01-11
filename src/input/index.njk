@@ -3,7 +3,7 @@ title: Shawn Wildermuth's Blog - Home Page
 layout: layout
 permalink: index.html
 ---
-{%- for story in collections.sortedPosts | take(11) -%}
+{%- for story in collections.sortedPosts | take(13) -%}
   {% if loop.first %}
     {% include 'storyHighlight.njk' %}
     <hr class="mt-2"/>
@@ -13,13 +13,13 @@ permalink: index.html
         <a href="/search" class="text-amber-700 hover:text-amber-500 font-sans">Search</a> | <a href="/years" class="font-sans text-amber-700 hover:text-amber-500">View By Year</a>
       </div>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-2 ">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1 lg:gap-2 ">
 
     {% else %}
-      {% include 'storyBox.njk' %}
+      {% include 'storyBox.njk' %} 
     {% endif %}
   {%- endfor -%}
-</div>
+</div> 
 <hr class="mt-2"/>
 
 <div class="flex justify-end">
