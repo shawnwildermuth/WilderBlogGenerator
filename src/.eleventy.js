@@ -14,6 +14,7 @@ module.exports = function (cfg) {
 
   if (process.env.NODE_ENV !== "production") {
     const ignores = [
+      "input/_drafts",
       "input/hwpod/",
       "input/music/",
       "input/search/",
@@ -27,6 +28,8 @@ module.exports = function (cfg) {
     for (let ignore of ignores) {
       cfg.ignores.add(ignore);
     }
+  } else {
+    cfg.ignores.add("input/_drafts/");
   }
 
   cfg.setLibrary("md", markdown);
