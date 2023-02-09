@@ -1,5 +1,10 @@
 [
   {
+    "id": "javascript-modules",
+    "name": "Modules in JavaScript",
+    "hint": "(new)"
+  },
+  {
     "id": "tailwind-css-3-fundamentals",
     "name": "TailwindCSS 3 Fundamentals",
     "hint": "(new)"
@@ -7,7 +12,7 @@
   {
     "id": "aspdotnet-core-6-using-grpc",
     "name": "Using gRPC in ASP.NET Core 6",
-    "hint": "(new)"
+    "hint": ""
   },
   {
     "id": "html5-javascript-css-front-end-web-app",

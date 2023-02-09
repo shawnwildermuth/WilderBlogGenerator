@@ -2,7 +2,7 @@
 const concat = require("gulp-concat");
 const uglify = require("gulp-uglify");
 const uglifycss = require("gulp-uglifycss");
-const del = require("del");
+const rimraf = require("rimraf");
 const rename = require("gulp-rename");
 const run = require("gulp-run-command").default;
 
@@ -32,7 +32,7 @@ function libs(cb) {
 }
 
 function clean() {
-  return del([
+  return rimraf([
     "_site/css/fonts.min.css",
     "_site/lib/",
   ]);
