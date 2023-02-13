@@ -17,7 +17,9 @@
     "build:css": "gulp",
     "build:js": "rollup ./src/site.js --file ./_site/js/wilderblog.min.js --format iife --sourcemap --plugin rollup-plugin-terser",
     "build:vue": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
-    "publish": "pwsh ./publish.ps1"
+    "publish": "pwsh ./publish.ps1",
+    "updateIndex": "node uploadIndex.js"
+    
   },
   "keywords": [],
   "author": "",
