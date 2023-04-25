@@ -13,17 +13,16 @@
 <script defer src="{{ '/js/wilderblog.min.js' | bust }}"></script>
 {%- if environment.env === 'production' -%}
   <!-- Google -->
-  <script type="text/javascript">
-    var gaJsHost = (
-      ("https:" == document.location.protocol)
-      ? "https://ssl."
-      : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-    var pageTracker = _gat._getTracker("UA-2467205-3");
-    pageTracker._initData();
-    pageTracker._trackPageview();
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFY66M3542"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VFY66M3542');
   </script>
   <!-- Ads -->
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -48,15 +47,33 @@
 
   <script id="dsq-count-scr" src="//wildermuth.disqus.com/count.js" async></script>
   <!-- MailerLite Universal -->
-<script>
-(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
-var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
-f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
-var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
-_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+  <script>
+    (function (m, a, i, l, e, r) {
+      m['MailerLiteObject'] = e;
+      function f() {
+        var c = {
+          a: arguments,
+          q: []
+        };
+        var r = this.push(c);
+        return "number" != typeof r
+          ? r
+          : f.bind(c.q);
+      }
+      f.q = f.q || [];
+      m[e] = m[e] || f.bind(f.q);
+      m[e].q = m[e].q || f.q;
+      r = a.createElement(i);
+      var _ = a.getElementsByTagName(i)[0];
+      r.async = 1;
+      r.src = l + '?v' + (~~ (new Date().getTime() / 1000000));
+      _
+        .parentNode
+        .insertBefore(r, _);
+    })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
 
-var ml_account = ml('accounts', '3448448', 'w7w7g6u4e3', 'load');
-</script>
-<!-- End MailerLite Universal -->
+    var ml_account = ml('accounts', '3448448', 'w7w7g6u4e3', 'load');
+  </script>
+  <!-- End MailerLite Universal -->
 
 {%- endif -%}
